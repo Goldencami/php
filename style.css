@@ -77,6 +77,10 @@ th, td {
     padding: 5px;
 }
 
+span {
+    color: rgb(228, 178, 41);
+}
+
 /* popup */
 #modal {
     display: none;

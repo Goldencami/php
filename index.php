@@ -63,25 +63,18 @@
 
             <div class="container-fluid" id="create-teamForm">
                 <label for="newteamForm">Create Team Formation: </label>
-                <input type="text" id="newteamForm" name="newteamForm" placeholder="6 attributes" required>
+                <input type="text" id="newteamForm" name="newteamForm" placeholder="5 attributes" required>
                 <button id="createQ5Btn" type="button" class="btn btn-success createBtn">Create</button>
                 <button id="q5Btn" type="button" class="btn btn-secondary">Display</button>
-                <div class="form-text inputHelp">Insertion Order: (formation_type, team_id1, team_id2, team1_score, team2_score, winner)</div>
+                <div class="form-text inputHelp">Insertion Order: (formation_type, team_id1, team_id2, team1_score, team2_score)</div>
             </div>
-
-            <!-- <div class="container-fluid" id="assign-teamForm">
-                <label for="newTeamForm">Assign Team Formation: (??)</label>
-                <input type="text" id="newTeamForm" name="newTeamForm" placeholder="?? attributes" required>
-                <button id="assignQ6Btn" type="button" class="btn btn-success createBtn">Create</button>
-                <button id="q6Btn" type="button" class="btn btn-secondary">Display</button>
-                <div class="form-text inputHelp">Insertion Order: ???</div>
-            </div> -->
         </div>
     </section>
 
     <section id="queries-section">
         <div class="container" id="queries">
             <h3>This section allows you to select predetermined queries</h3>
+
             <div class="row">
                 <div class="col">
                     <div class="container-fluid" id="q7">
@@ -102,7 +95,7 @@
                 <div class="col">
                     <div class="container-fluid">
                         <h5>Query 9</h5>
-                        <p>For a given location and day, separated by semicolons, get details of all the teams formations recorded in the system.</p>
+                        <p>For a given location and day, <span id="semicolons">separated by semicolons</span>, get details of all the teams formations recorded in the system.</p>
                         <label for="location-day">Location address and day(YY-MM-DD) : </label>
                         <input type="text" id="location-day" name="location-day" required>
                         <button id="q9Btn" type="button" class="btn btn-secondary">Display</button>
@@ -121,8 +114,8 @@
                 <div class="col">
                     <div class="container-fluid">
                         <h5>Query 11</h5>
-                        <p>For a given period of, separated by semicolons, give a report of the teams’ formations for all the locations.</p>
-                        <label for="team-time">Date (YY-MM-DD): </label>
+                        <p>For a given period of, <span id="semicolons">separated by semicolons</span>, give a report of the teams’ formations for all the locations.</p>
+                        <label for="team-time">Dates (YY-MM-DD): </label>
                         <input type="text" id="team-time" name="team-time" required>
                         <button id="q11Btn" type="button" class="btn btn-secondary">Display</button>
                     </div>
@@ -187,10 +180,6 @@
             </div>
         </div>
     </section>
-    
-    <!-- <div class="container" id="edit-test">
-        <button type="button" id="typeBtn" data-id="6" class="btn btn-warning btn-sm">Update</button>
-    </div> -->
 
     <section id="output-section">
         <div class="container-fluid" id="output">
@@ -207,7 +196,6 @@
     </div>
 
     <script type="module" src="script.js"></script>
-    <!-- <script type="module" src="script.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

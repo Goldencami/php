@@ -1,5 +1,5 @@
 <?php
-$host = 'hnc353.encs.concordia.ca';
+$server = 'hnc353.encs.concordia.ca';
 $username = 'hnc353_1';
 $password = 'tess1969';
 $database = 'hnc353_1';
@@ -11,5 +11,10 @@ try {
     die("Connection failed: " . $e->getMessage());
 }
 
-echo "MySQL connected successfully.";
+// $mysqli = new mysqli($server, $username, $password, $database);
+
+// if ($mysqli->connect_error) {
+//     die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
+// }
+
 ?>
